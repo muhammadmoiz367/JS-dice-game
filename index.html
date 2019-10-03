@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <title>Dice Game-Rules</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+.wrapper {
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.box{
+    padding: 25px;
+}
+h1{
+    color: rgb(172, 1, 172);;
+    margin: 40px 20px;
+    font-size: 38px;
+    font-weight:600;
+    font-family: Lato;
+    letter-spacing: 3px;
+}
+ul{
+    line-height: 35px;
+    list-style:disc;
+    margin: 20px 40px;
+    list-style-type: square;
+    
+}
+li{
+    font-size: 22px;
+    font-family: Lato;
+
+}
+button{
+    position:absolute;
+    top:76%;
+    left: 75%;
+    width: 130px;
+    height: 50px;
+    background-color: rgb(172, 1, 172);
+    border: 2px solid rgb(172, 1, 172);
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(128, 3, 128);
+    border: 2px solid rgb(128, 3, 128);
+    transition-delay: 200ms;
+}
+a{
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    font-weight: 400;
+    width: 30px;
+    font-family: sans-serif
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="rules">
+                <h1>Dice Game Rules</h1>
+                <ul>
+                    <li>The game has 2 players, playing in rounds</li>
+                    <li>In each turn, a player rolls a pair of dice as many times as he whishes. Each result get added to his ROUND score</li>
+                    <li>BUT, if the player rolls a 1 in either dice or two 6s, all his ROUND score gets lost. After that, it's the next player's turn</li>
+                    <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn</li>
+                    <li>The first player to reach desired winning points on GLOBAL score wins the game</li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <button><a href="game.html">Play</a></button>
+</body>
+</html>
+
+
